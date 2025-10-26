@@ -1,0 +1,344 @@
+/* Add your CSS to this file */
+/* body {
+    margin: 0;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+} */
+
+/* General Setup and Typography */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 1.2em; /* Smaller h1 for the logo/project name */
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+}
+
+a {
+    color: #5560b7; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #4a549d;
+}
+
+/* --- Header & Navigation --- */
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    font-size: 0.95em;
+    font-weight:bold;
+    padding: 5px;
+}
+
+/* Highlight the 'About' link as it appears slightly darker in the screenshot */
+nav ul li:first-child a {
+    color: #616ed6;
+    font-weight: bold;
+}
+
+/* --- Buttons (CTA) --- */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #79c99e; /* Green button color */
+    color: white !important;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #63b386;
+}
+
+/* --- Hero Section (overview-hero) --- */
+.overview-hero {
+    padding: 60px 0;
+    background-color: #E4EBF4;
+}
+
+.overview-hero .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.overview-hero-image img {
+    /* For the purpose of the screenshot representation */
+    content: url('images/yoga-day.png');
+    max-width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.overview-hero-text {
+    flex: 1;
+}
+
+.overview-hero-text h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.overview-hero-text p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* --- Learn About Section (learn-about) --- */
+.learn-about {
+    padding: 40px 0 60px 0;
+    text-align: center;
+}
+
+.learn-about h2 {
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card {
+    flex-basis: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    text-align: left;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+    /* Placeholder for card images */
+    /* content: url('yoga-girls.png'); */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #5560b7; /* Blue card title */
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* --- Testing Programme Section (testing) --- */
+.testing {
+    background-color: #5560b7; /* Dark blue/purple background */
+    padding: 50px 0;
+    color: white;
+}
+
+.testing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testing-desciption h2 {
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.testing-desciption p {
+    font-size: 1em;
+    margin: 0;
+    max-width: 600px;
+}
+
+/* Custom button style for this dark section */
+.testing .btn {
+    background-color: #79c99e; /* Use the bright green */
+    color: white !important;
+}
+
+/* --- Recent Stories Section (stories) --- */
+.stories {
+    padding: 60px 0;
+}
+
+.stories h2 {
+    text-align: left;
+}
+
+article {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+article img {
+    /* Placeholder for story images, sized to fit the screenshot */
+    /* content: url('black-man.webp'); */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.article-body h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.article-body p {
+    margin-bottom: 5px;
+    font-size: 0.95em;
+    color: #666;
+}
+
+.article-body a {
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+/* --- Newsletter Section (newsletter) --- */
+.newsletter {
+    background-color: #79c99e; /* Green background */
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.newsletter h3 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    flex-grow: 1;
+}
+
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.newsletter .btn {
+    background-color: #5560b7; /* Darker blue button */
+    border-radius: 5px;
+    padding: 12px 25px;
+    line-height: 1; /* Adjust to align with the input height */
+}
+
+.newsletter .btn:hover {
+    background-color: #4a549d;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.85em;
+}
+
+footer .container {
+    padding: 5px 0;
+}
