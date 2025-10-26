@@ -12,7 +12,8 @@
 
 /* General Setup and Typography */
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
     margin: 0;
     padding: 0;
     color: #333;
@@ -48,13 +49,13 @@ h3 {
 }
 
 a {
-    color: #5560b7; /* Link color */
+    color: #6b7280; /* Link color */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #4a549d;
+    color: #5A67D8;
 }
 
 /* --- Header & Navigation --- */
@@ -116,7 +117,7 @@ nav ul li:first-child a {
 /* --- Hero Section (overview-hero) --- */
 .overview-hero {
     padding: 60px 0;
-    background-color: #E4EBF4;
+    background-color: #E2E8F0;
 }
 
 .overview-hero .container {
@@ -138,8 +139,6 @@ nav ul li:first-child a {
 }
 
 .overview-hero-text h2 {
-    font-size: 2.5em;
-    font-weight: bold;
     color: #333;
     text-align: left;
     margin-bottom: 15px;
@@ -153,11 +152,13 @@ nav ul li:first-child a {
 /* --- Learn About Section (learn-about) --- */
 .learn-about {
     padding: 40px 0 60px 0;
-    text-align: center;
 }
 
 .learn-about h2 {
     margin-bottom: 40px;
+    font-size: 24px;
+    color: #48BB78;
+    text-align: left;
 }
 
 .cards {
@@ -171,7 +172,8 @@ nav ul li:first-child a {
     padding: 20px;
     border-radius: 8px;
     background-color: #fff;
-    border: 1px solid #eee;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
     text-align: left;
     transition: box-shadow 0.3s;
 }
@@ -181,16 +183,15 @@ nav ul li:first-child a {
 }
 
 .card img {
-    /* Placeholder for card images */
-    /* content: url('yoga-girls.png'); */
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
 
 .card h3 {
-    color: #5560b7; /* Blue card title */
+    color: #48BB78; /* Blue card title */
     margin-bottom: 10px;
+    font-size: 21px;
 }
 
 .card p {
@@ -200,7 +201,7 @@ nav ul li:first-child a {
 
 /* --- Testing Programme Section (testing) --- */
 .testing {
-    background-color: #5560b7; /* Dark blue/purple background */
+    background-color: #4A5568; /* Dark blue/purple background */
     padding: 50px 0;
     color: white;
 }
@@ -226,8 +227,9 @@ nav ul li:first-child a {
 
 /* Custom button style for this dark section */
 .testing .btn {
-    background-color: #79c99e; /* Use the bright green */
+    background-color: #48BB78; /* Use the bright green */
     color: white !important;
+    border-radius: 5px;
 }
 
 /* --- Recent Stories Section (stories) --- */
@@ -237,6 +239,8 @@ nav ul li:first-child a {
 
 .stories h2 {
     text-align: left;
+    color: #5A67D8;
+    font-size: 18px;
 }
 
 article {
@@ -282,7 +286,7 @@ article img {
 
 /* --- Newsletter Section (newsletter) --- */
 .newsletter {
-    background-color: #79c99e; /* Green background */
+    background-color: #48BB78; /* Green background */
     padding: 50px 0;
     color: white;
     text-align: center;
@@ -320,7 +324,7 @@ article img {
 }
 
 .newsletter .btn {
-    background-color: #5560b7; /* Darker blue button */
+    background-color: #5A67D8; /* Darker blue button */
     border-radius: 5px;
     padding: 12px 25px;
     line-height: 1; /* Adjust to align with the input height */
@@ -332,8 +336,8 @@ article img {
 
 /* --- Footer --- */
 footer {
-    background-color: #333;
-    color: #ccc;
+    background-color: #4A5568;
+    color: white;
     text-align: center;
     padding: 15px 0;
     font-size: 0.85em;
