@@ -101,8 +101,6 @@ nav ul li:first-child a {
     background-color: #79c99e; /* Green button color */
     color: white !important;
     border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
     font-size: 0.9em;
     border: none;
     cursor: pointer;
@@ -230,6 +228,7 @@ nav ul li:first-child a {
     background-color: #48BB78; /* Use the bright green */
     color: white !important;
     border-radius: 5px;
+    text-transform: uppercase;
 }
 
 /* --- Recent Stories Section (stories) --- */
@@ -282,6 +281,10 @@ article img {
 .article-body a {
     font-weight: bold;
     font-size: 0.95em;
+    color: #5A67D8;
+}
+.article-body a:hover {
+    color: #bcbbd6;
 }
 
 /* --- Newsletter Section (newsletter) --- */
@@ -293,8 +296,8 @@ article img {
 }
 
 .newsletter h3 {
+
     color: white;
-    font-size: 2em;
     margin-bottom: 10px;
 }
 
@@ -338,7 +341,7 @@ article img {
 footer {
     background-color: #4A5568;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 15px 0;
     font-size: 0.85em;
 }
